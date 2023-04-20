@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    justify-content: center;
+    min-height:100vh ;
+    align-items: center;
+    background-color: #1a73e8;
+    
+}
+
+.formContainer {
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+}
+
+.header {
+    color: #1a73e8;
+    text-align: left;
+
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.inputDiv label {
+    margin: 5px;
+    text-align: left;
+
+}
+.inputDiv input {
+    width: 300px;
+    height: 25px;
+    border-radius: 3px;
+}
+.inputDiv span {
+    background-color: #f174746e;
+    border-radius: 3px;
+    color: #e81a1a;
+    text-align:left ;
+    font-size: 9px;
+    margin-top: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+.inputComp {
+    width: 300px;
+    height: 25px;
+    border: 1px solid silver;
+}
+.inputUncomplate {
+    width: 300px;
+    height: 25px;
+    border: 1px solid #e81a1a83;
+}
+.inputComp:focus , 
+.inputUncomplate:focus {
+    outline: 0;
+    width: 300px;
+    height: 25px;
+    border: 1px solid #1a73e8a9;
+}
+
+.checkContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.checkItem {
+    display: flex;
+    justify-content: space-between;
+}
+.checkItem label {
+    color:#1a73e8 ;
+}
+input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+input[type='checkbox']:checked {
+    background-color: #1a73e8;
+    width: 18px;
+    height: 18px;
+
+}
+.checkContainer span {
+    background-color: #f174746e;
+    border-radius: 3px;
+    color: #e81a1a;
+    text-align:left ;
+    font-size: 9px;
+    margin-top: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+.buttonContainer a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+.buttonContainer button {
+    background-color: #1a73e8;
+    padding:10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttonContainer button:hover {
+    background-color: #2267c0;
+}
+.buttonContainer button:active {
+    background-color: #1f5ba8;
+}

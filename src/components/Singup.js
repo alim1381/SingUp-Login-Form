@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { Validation } from './validation'
 import { notify } from './notify';
 import { ToastContainer } from 'react-toastify';
-import styles from './Singin.module.css';
+import styles from './Singup.module.css';
+import { Link } from 'react-router-dom';
 
-export default function Singin() {
+export default function Singup() {
 
     const [data , setData] = useState({
         name : "",
@@ -38,7 +39,7 @@ export default function Singin() {
     }
 
     useEffect(() => {
-        setErrors(Validation(data))
+        setErrors(Validation(data , 'singup'))
     } , [data ])
     
     const subHandler = e => {
@@ -62,7 +63,7 @@ export default function Singin() {
     return (
     <div className={styles.container}>
         <form className={styles.formContainer} onSubmit={subHandler}>
-            <h1 className={styles.header}>Singin</h1>
+            <h1 className={styles.header}>Sing Up</h1>
             <div className={styles.inputDiv}>
                 <label>Name</label>
                 <input 
@@ -121,8 +122,8 @@ export default function Singin() {
             </div>
 
             <div className={styles.buttonContainer}>
-                <a href="#">Login</a>
-                <button type='submit'>Submit</button>
+                <Link to="/login">Login</Link>
+                <button type='submit'>Sing Up</button>
             </div>
         </form>
         <ToastContainer />

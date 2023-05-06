@@ -126,3 +126,22 @@ input[type='checkbox']:checked {
 .buttonContainer button:active {
     background-color: #1f5ba8;
 }
+
+@media (max-width : 400px) {
+    .formContainer {
+        padding: 10px;
+    }
+    .inputDiv input {
+        width: 260px;
+    }
+    .inputComp {
+        width: 260px;
+    }
+    .inputUncomplate {
+        width: 260px;
+    }
+    .inputComp:focus , 
+.inputUncomplate:focus {
+    width: 260px;
+}
+}
